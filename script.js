@@ -196,30 +196,3 @@ window.addEventListener("resize", renderReviews);
 
 renderReviews();
 
-
-/* =========================
-   DEMO ORDER FORM
-========================= */
-
-const orderForm = document.getElementById("order-form");
-const orderMessage = document.getElementById("order-message");
-
-orderForm.addEventListener("submit", function (event) {
-
-    event.preventDefault();
-
-    const customerName =
-        document.getElementById("customer-name").value;
-
-    const customerProduct =
-        document.getElementById("customer-product").value;
-
-    orderMessage.textContent =
-        "Thank you " + customerName +
-        "! Your " + customerProduct +
-        " demo order has been submitted.";
-
-    orderForm.reset();
-
-});
-                                               
