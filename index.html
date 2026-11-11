@@ -260,10 +260,11 @@
         </div>
 
         
+
 <form
     id="order-form"
     class="order-form"
-    action="https://formsubmit.co/smartbunnyshow@gmail.com"
+    action="https://formsubmit.co/YOUR_GMAIL"
     method="POST">
 
     <input type="hidden" name="_subject"
@@ -274,57 +275,84 @@
 
     <input type="hidden" name="_template"
            value="table">
-    
 
-            <div class="form-group">
-                <label for="customer-name">Full Name</label>
-                <input type="text" id="customer-name"
-                       placeholder="Enter your name" required>
-            </div>
+    <!-- CUSTOMER NAME -->
+    <div class="form-group">
+        <label for="customer-name">Full Name</label>
+        <input type="text"
+               id="customer-name"
+               name="Customer Name"
+               placeholder="Enter your name"
+               required>
+    </div>
 
-            <div class="form-group">
-                <label for="customer-phone">Phone Number</label>
-                <input type="tel" id="customer-phone"
-                       placeholder="Enter phone number"
-                       pattern="[0-9]{10}" required>
-            </div>
+    <!-- PHONE -->
+    <div class="form-group">
+        <label for="customer-phone">Phone Number</label>
+        <input type="tel"
+               id="customer-phone"
+               name="Phone"
+               placeholder="Enter phone number"
+               pattern="[0-9]{10}"
+               required>
+    </div>
 
-            <div class="form-group">
-                <label for="customer-email">Email Address</label>
-                <input type="email" id="customer-email"
-                       placeholder="Enter email">
-            </div>
+    <!-- EMAIL -->
+    <div class="form-group">
+        <label for="customer-email">Email Address</label>
+        <input type="email"
+               id="customer-email"
+               name="Email"
+               placeholder="Enter email">
+    </div>
 
-            <div class="form-group">
-                <label for="customer-product">Select Product</label>
-                <select id="customer-product" required>
-                    <option value="">Choose Product</option>
-                    <option value="Whey Protein">Whey Protein</option>
-                    <option value="Mass Gainer">Mass Gainer</option>
-                    <option value="Protein Combo">Protein Combo</option>
-                </select>
-            </div>
+    <!-- PRODUCT -->
+    <div class="form-group">
+        <label for="customer-product">Select Product</label>
 
-            <div class="form-group">
-                <label for="customer-quantity">Quantity</label>
-                <input type="number" id="customer-quantity"
-                       min="1" max="20" value="1" required>
-            </div>
+        <select id="customer-product"
+                name="Product"
+                required>
 
-            <div class="form-group">
-                <label for="customer-address">Delivery Address</label>
-                <textarea id="customer-address"
-                          placeholder="Enter complete address"
-                          required></textarea>
-            </div>
+            <option value="">Choose Product</option>
+            <option value="Whey Protein">Whey Protein</option>
+            <option value="Mass Gainer">Mass Gainer</option>
+            <option value="Protein Combo">Protein Combo</option>
 
-            <button type="submit" class="btn-primary order-submit">
-                CONFIRM DEMO ORDER
-            </button>
+        </select>
+    </div>
 
-            <p id="order-message"></p>
+    <!-- QUANTITY -->
+    <div class="form-group">
+        <label for="customer-quantity">Quantity</label>
 
-        </form>
+        <input type="number"
+               id="customer-quantity"
+               name="Quantity"
+               min="1"
+               max="20"
+               value="1"
+               required>
+    </div>
+
+    <!-- ADDRESS -->
+    <div class="form-group">
+        <label for="customer-address">Delivery Address</label>
+
+        <textarea id="customer-address"
+                  name="Address"
+                  placeholder="Enter complete address"
+                  required></textarea>
+    </div>
+
+    <!-- SUBMIT BUTTON -->
+    <button type="submit"
+            class="btn-primary order-submit">
+        PLACE YOUR ORDER
+    </button>
+
+</form>
+
 
     </div>
 
