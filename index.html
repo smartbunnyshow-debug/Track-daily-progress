@@ -259,7 +259,22 @@
             <h2>PLACE YOUR <span>ORDER</span></h2>
         </div>
 
-        <form id="order-form" class="order-form">
+        
+<form
+    id="order-form"
+    class="order-form"
+    action="https://formsubmit.co/smartbunnyshow@gmail.com"
+    method="POST">
+
+    <input type="hidden" name="_subject"
+           value="New Protinex Order">
+
+    <input type="hidden" name="_captcha"
+           value="true">
+
+    <input type="hidden" name="_template"
+           value="table">
+    
 
             <div class="form-group">
                 <label for="customer-name">Full Name</label>
